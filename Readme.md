@@ -8,11 +8,11 @@
 
  ```js
 var express = require('express');
-var serveStatic = require('serve-static');
+var customRedirects = require('custom-redirects');
 
 var app = express();
 
-app.use(serveStatic({'/original': '/destination/'}));
+app.use(customRedirects({'/original': '/destination/'}));
 app.listen();
 ```
 
