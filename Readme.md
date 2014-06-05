@@ -19,6 +19,8 @@ app.listen();
 ## Info
 Serves as permenent redirects (301).
 
+I stole a bit of the middleware boilerplate from https://github.com/expressjs/serve-static
+
 ## License
 
 The MIT License (MIT)
