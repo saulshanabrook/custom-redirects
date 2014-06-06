@@ -22,10 +22,8 @@ Serves as permenent redirects (301).
 I stole a bit of the middleware boilerplate from https://github.com/expressjs/serve-static
 
 I wrote this so I could tack on custom redirects on top of
-[Ghost](https://github.com/TryGhost/Ghost/). I was able to shove this
-middleware in and then run Ghost on top of it. This way I could define some
-custom redirects for migrating from Tumblr to Ghost and not lose all my old
-web traffic.
+[Ghost](https://github.com/TryGhost/Ghost/). For the full story, check out
+[my blog post](http://www.saulshanabrook.com/the-helish-ride-to-paradise/)
 
 ## License
 
