@@ -18,3 +18,4 @@ deploy:
     tags: true
     repo: saulshanabrook/custom-redirects
     node: 0.10
+    branch: master
