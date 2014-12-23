@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/saulshanabrook/custom-redirects",
   "dependencies": {
-    "parseurl": "1.0.1"
+    "parseurl": "1.x"
   },
   "devDependencies": {
     "istanbul": "0.2.10",
