@@ -1,11 +1,19 @@
 language: node_js
 node_js:
-  - "0.8"
-  - "0.10"
-  - "0.11"
+- '0.8'
+- '0.10'
+- '0.11'
 matrix:
   allow_failures:
-    - node_js: "0.11"
+  - node_js: '0.11'
   fast_finish: true
-script: "npm run-script test-travis"
-after_script: "npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls"
+script: npm run-script test-travis
+after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+deploy:
+  provider: npm
+  email: s.shanabrook@gmail.com
+  api_key:
+    secure: d7Dx64W17Iu5cCxgH7kVUYDB26nKNo001sDZcsDf7n4zGEO55xchi6cahg32YLDco/q0k7cmNubwRvH4Vk5BGJpbBD7xJrL6nWWEmwXIFT+TPSz2nSJdpMT1TYTB6iyVN65EL2qaIhoem45uapbfiFZ7af6njE8lyt3Ci263bEU=
+  on:
+    tags: true
+    repo: saulshanabrook/custom-redirects
